@@ -30,7 +30,7 @@ const topicDescriptions: Record<Language, Record<LegalTopic, string>> = {
     'inheritance':
       'وصیت، وارثین کی تقسیم، املاک کی ترتیب، اور ترکے کے معاملات۔',
   },
-  'roman-urdu': {
+  'romanUrdu': {
     'tenant-disputes':
       'Kiraye dar aur malik ke darmiyaan ikhtilafaat, security deposit, aur be-dakhal ke baare mein.',
     'salary-issues':
@@ -62,7 +62,7 @@ export default function HomePage() {
       main: 'پاکستان میں قانونی معلومات',
       subtitle: 'مختلف قانونی موضوعات کے بارے میں تعلیمی معلومات حاصل کریں',
     },
-    'roman-urdu': {
+    'romanUrdu': {
       main: 'Pakistan Mein Qanuni Malumat',
       subtitle: 'Mukhtalif qanuni mausuat ke baare mein taleemi malumat hasil karen',
     },
@@ -100,7 +100,7 @@ export default function HomePage() {
                     {topicDescriptions[language][topic]}
                   </p>
                   <span className="text-blue-600 font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
-                    {language === 'urdu' ? 'شروع کریں' : language === 'roman-urdu' ? 'Shuru Karen' : 'Get Started'}
+                    {language === 'urdu' ? 'شروع کریں' : language === 'romanUrdu' ? 'Shuru Karen' : 'Get Started'}
                     <span>→</span>
                   </span>
                 </div>
@@ -115,7 +115,7 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">
               {language === 'urdu'
                 ? 'یہ پلیٹ فارم کیسے کام کرتا ہے'
-                : language === 'roman-urdu'
+                : language === 'romanUrdu'
                   ? 'Yeh Platform Kaise Kaam Karta Hai'
                   : 'How This Platform Works'}
             </h2>
@@ -124,31 +124,31 @@ export default function HomePage() {
               {[
                 {
                   urdu: 'اپنا سوال پوچھیں',
-                  'roman-urdu': 'Apna Sawaal Pochen',
+                  'romanUrdu': 'Apna Sawaal Pochen',
                   english: 'Ask Your Question',
                   desc: {
                     urdu: 'کسی بھی قانونی موضوع کے بارے میں اپنا سوال لکھیں۔',
-                    'roman-urdu': 'Kisi bhi qanuni mausua ke baare mein apna sawaal likhen.',
+                    'romanUrdu': 'Kisi bhi qanuni mausua ke baare mein apna sawaal likhen.',
                     english: 'Write your question about any legal topic.',
                   },
                 },
                 {
                   urdu: 'AI جواب حاصل کریں',
-                  'roman-urdu': 'AI Jawab Hasil Karen',
+                  'romanUrdu': 'AI Jawab Hasil Karen',
                   english: 'Get AI Answer',
                   desc: {
                     urdu: 'جدید AI آپ کے سوال کا جواب فوری دیتا ہے۔',
-                    'roman-urdu': 'Jadeed AI apke sawaal ka jawab fori deta hai.',
+                    'romanUrdu': 'Jadeed AI apke sawaal ka jawab fori deta hai.',
                     english: 'Modern AI instantly answers your question.',
                   },
                 },
                 {
                   urdu: 'وکیل سے رابطہ کریں',
-                  'roman-urdu': 'Wakeel Se Rabta Karen',
+                  'romanUrdu': 'Wakeel Se Rabta Karen',
                   english: 'Consult a Lawyer',
                   desc: {
                     urdu: 'حساس معاملوں میں ہمیشہ کسی قابل اعتماد وکیل سے رابطہ کریں۔',
-                    'roman-urdu': 'Hassas mamlon mein hamesha wakeel se rabta karen.',
+                    'romanUrdu': 'Hassas mamlon mein hamesha wakeel se rabta karen.',
                     english: 'Always consult a lawyer for sensitive matters.',
                   },
                 },
@@ -169,21 +169,21 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold mb-4">
               {language === 'urdu'
                 ? 'اب شروع کریں'
-                : language === 'roman-urdu'
+                : language === 'romanUrdu'
                   ? 'Ab Shuru Karen'
                   : 'Get Started Now'}
             </h2>
             <p className="text-blue-100 mb-8">
               {language === 'urdu'
                 ? 'اپنے قانونی سوالات کے جوابات حاصل کریں'
-                : language === 'roman-urdu'
+                : language === 'romanUrdu'
                   ? 'Apne qanuni sawaalon ke joabat hasil karen'
                   : 'Get answers to your legal questions'}
             </p>
             <Link href="/tenant-disputes" className="inline-block bg-white text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors">
               {language === 'urdu'
                 ? 'سوال کریں'
-                : language === 'roman-urdu'
+                : language === 'romanUrdu'
                   ? 'Sawaal Karen'
                   : 'Ask a Question'}
             </Link>
