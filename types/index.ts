@@ -1,6 +1,6 @@
 // types/index.ts
 
-export type Language = 'urdu' | 'roman-urdu' | 'english';
+export type Language = 'urdu' | 'romanUrdu' | 'english';
 
 export type LegalTopic = 
   | 'tenant-disputes' 
